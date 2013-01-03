@@ -1,0 +1,28 @@
+CACHE MANIFEST
+# Version 1.0.3
+
+# This is the default section for entries. Files listed under this header (or immediately after the CACHE MANIFEST) will be explicitly cached after they're downloaded for the first time.
+CACHE:
+/
+/stylesheets/bootstrap.min.css
+/stylesheets/main.css
+/stylesheets/bootstrap-responsive.min.css
+/javascripts/vendor/jquery-1.8.3.min.js
+/javascripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js
+/javascripts/underscore.js
+/javascripts/main.js
+/javascripts/backbone.js
+/javascripts/vendor/bootstrap.min.js
+/javascripts/async.js
+/javascripts/tablet.js
+/javascripts/swipe.min.js
+
+# Files listed under this section are white-listed resources that require a connection to the server. All requests to these resources bypass the cache, even if the user is offline. Wildcards may be used
+NETWORK:
+*
+#/walklist/*
+#http://www.google-analytics.com/*
+
+
+# An optional section specifying fallback pages if a resource is inaccessible. The first URI is the resource, the second is the fallback. Both URIs must be relative and from the same origin as the manifest file. Wildcards may be used.
+FALLBACK:
