@@ -29,11 +29,13 @@ app.configure('development', function(){
 });
 
 app.locals({
-	'company': 'Intertrode'
+	'company': 'Nodestrap'
     ,'copyright_year': '2013'
     ,'hero': {
-        'header': 'Bootstrap!',
-        'sub': 'Get started quicker!!'}
+        'header': 'Nodestrap!',
+        'sub': 'Get started quicker!!'
+	}
+	,'TrackingID': 'UA-XXXXX-X'
 });
 
 
