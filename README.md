@@ -1,4 +1,4 @@
 nodestrap
 =========
 
-Bootstrap node.js app with Initializr html5 bootstrap + express
+A bootstrap project for a node + expres + bootstrap.js web app
