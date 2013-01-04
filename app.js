@@ -28,6 +28,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+/*
 app.locals({
 	'company': 'Nodestrap'
     ,'copyright_year': '2013'
@@ -35,17 +36,12 @@ app.locals({
         'header': 'Nodestrap!',
         'sub': 'Get started quicker!!'
 	}
-	,'TrackingID': 'UA-XXXXX-X'
+	,'TrackingId': 'UA-XXXXX-X'
 });
-
+*/
+require('./locals.js').init(app);
 
 // Load all routes
-app.get("/tablet.grassrootscommandos.com.appcache", function(req, res){
-console.log('HERE');
-	res.header("Content-Type", "text/cache-manifest");
-	res.sendfile("./public/tablet.grassrootscommandos.com.appcache");
-});
-
 fs.readdir('./routes/', function(err,files) {
 	for(var index = 0; index < files.length; ++index ) {
 		if( path.extname(files[index]) == '.js' ) {
