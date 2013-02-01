@@ -28,17 +28,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-/*
-app.locals({
-	'company': 'Nodestrap'
-    ,'copyright_year': '2013'
-    ,'hero': {
-        'header': 'Nodestrap!',
-        'sub': 'Get started quicker!!'
-	}
-	,'TrackingId': 'UA-XXXXX-X'
-});
-*/
+// get locals
 require('./locals.js').init(app);
 
 // Load all routes
